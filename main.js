@@ -21,7 +21,7 @@ function get() {
 }
 
 function del() {
-    localStorage.removeItem("finder" + identifier)
+    localStorage.removeItem("finder" + identifier.value)
     localStorage.removeItem(identifier.value + "Minute")
     localStorage.removeItem(identifier.value + "Fixed")
     localStorage.removeItem(identifier.value + "Goals")
