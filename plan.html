@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="w3-container">
+    <h1 class="w3-bar-item"><span class="w3-text-blue">Start</span>ify</h1>
+    <div class="w3-bar w3-light-gray">
+        <a href="index.html" class="w3-button">Home</a>
+        <a href="plan.html" class="w3-button w3-indigo">Plan</a>
+    </div>
+
+    <h2>Identifier</h2>
+    <p>Set an identifier for your idea - you'll need this to find information about it!</p>
+    <input type="text" id="identifier" placeholder="Identifier/Name" class="w3-input">
+    
+    <br>
+
+    <h2>Ideas In A Minute</h2>
+    <p>Set a timer for one minute and quickly write everything you can think of for your startup. It does <i>not</i> need to be legible.</p>
+    <p>It should be something you can use to quickly "spit" your ideas out onto the page.</p>
+    <textarea name="" id="ideas-min" cols="30" rows="10" class="w3-input w3-border w3-hover-light-gray w3-round"></textarea>
+
+    <br>
+
+    <h2>Fix It</h2>
+    <p>By now, you should have completed the section above, if not, do so. You can use this section to clean up any mistakes and/or details.</p>
+    <textarea name="" id="ideas-fix" cols="30" rows="10" class="w3-input w3-border w3-hover-light-gray w3-round"></textarea>
+
+    <br>
+
+    <h2>Goals</h2>
+    <p>Use this section to state any goals you have for your startup/business.</p>
+    <textarea name="" id="goals" cols="30" rows="10" class="w3-input w3-border w3-hover-light-gray w3-round"></textarea>
+
+    <br>
+
+    <h2>Further Details</h2>
+    <p>Go into more detail about your startup - for example, what will you name it?</p>
+    <textarea name="" id="details" cols="30" rows="10" class="w3-input w3-border w3-hover-light-gray w3-round"></textarea>
+    <br>
+
+    <button onclick="save()" class="w3-button w3-purple w3-round">Save My Idea</button>
+    <button onclick="get()" class="w3-button w3-indigo w3-round">Fetch My Idea</button>
+    <button onclick="del()" class="w3-button w3-red w3-round">Delete My Idea</button>
+    
+    <br><br>
+    <div class="w3-card w3-padding w3-round">
+        <h3>Identifier</h3>
+        <h1 id="name"></h1>
+        <hr>
+        <h3>Ideas In A Minute</h3>
+        <p id="mins"></p>
+        <hr>
+        <h3>Ideas In A Minute - Fixed</h3>
+        <p id="fixs"></p>
+        <hr>
+        <h3>Goals</h3>
+        <p id="goalss"></p>
+        <hr>
+        <h3>Details</h3>
+        <p id="detailss"></p>
+    </div>
+
+    <p></p>
+
+    <style>
+        @font-face {
+            font-family: "font";
+            src: url("SourceSansPro-Bold.ttf");
+        }
+
+        body, h1, h3, p, h2, a, input {
+            font-family: "font";
+        }
+    </style>
+</body>
+</html>
