@@ -26,4 +26,10 @@ function del() {
     localStorage.removeItem(identifier.value + "Fixed")
     localStorage.removeItem(identifier.value + "Goals")
     localStorage.removeItem(identifier.value + "Detail")
+
+    document.getElementById("name").innerText = ""
+    document.getElementById("mins").innerText = ""
+    document.getElementById("fixs").innerText = ""
+    document.getElementById("goalss").innerText = ""
+    document.getElementById("detailss").innerText = ""
 }
